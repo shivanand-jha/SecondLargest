@@ -21,7 +21,9 @@ public class array1 {
         System.out.println("Result is : ");
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < a[0].length; j++) {
-                c[i][j] = a[i][j] * b[i][j];
+                for (int k = 0; k < a[0].length; k++) {
+                    c[i][j] = c[i][j] + a[i][k] * b[k][j];
+                }
             }
         }
         for (int[] x : c) {

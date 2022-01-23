@@ -2,8 +2,8 @@ public class SumofallElementArray {
     static double sum (double ...x)
     {
         double s =0;
-        for (int i = 0; i < x.length; i++) {
-            s +=x[i];
+        for (double v : x) {
+            s += v;
         }
         return s;
     }

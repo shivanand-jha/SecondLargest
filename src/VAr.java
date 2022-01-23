@@ -12,6 +12,8 @@ public class VAr {
     }
 
     public static void main(String[] args) {
+        System.out.println(max(125));
+        System.out.println(max(1,2,5,45));
         System.out.println(max(0,125,1254));
     }
 }

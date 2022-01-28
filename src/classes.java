@@ -11,7 +11,9 @@ public class classes {
         r.length=12;
         r.breadth=14;
         System.out.println(r.area());
+        System.out.println(r.perimeter());
         System.out.println(r1.area());
+        System.out.println(r1.perimeter());
         System.out.println(c.area());
         System.out.println(c.perimeter());
         System.out.println(c1.area());
@@ -24,6 +26,9 @@ class rectangle{
     public int breadth;
     public int area(){
      return length*breadth;
+    }
+    public int perimeter(){
+        return 2*(length+breadth);
     }
 }
 class circle{
